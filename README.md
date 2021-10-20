@@ -2,6 +2,8 @@
 
 This project demonstrates a basic Hardhat use case with configuration to deploy to [Celo](https://celo.org). It comes with a sample contract, a test for that contract, and a sample script that deploys that contract.
 
+Refer to the `hardhat.config.js` file to see how it is configured to deploy to Celo.
+
 Try running some of the following tasks:
 
 ```shell
