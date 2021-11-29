@@ -1,5 +1,7 @@
 require("@nomiclabs/hardhat-waffle");
 require('dotenv').config({path: '.env'});
+require('hardhat-deploy');
+require("@nomiclabs/hardhat-ethers");
 
 // You need to export an object to set up your config
 // Go to https://hardhat.org/config/ to learn more
@@ -18,6 +20,9 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
  */
 module.exports = {
   defaultNetwork: "alfajores",
+  namedAccounts: {
+    deployer: 0
+  },
   networks: {
     alfajores: {
       url: "https://alfajores-forno.celo-testnet.org",
